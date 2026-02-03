@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="color-scheme" content="light" />
+    <title>Valentines</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="glow g1"></div>
+      <div class="glow g2"></div>
+      <div class="glow g3"></div>
+      <div class="noise"></div>
+    </div>
+
+    <main class="wrap">
+      <section class="card" aria-labelledby="title">
+        <div class="badge" aria-hidden="true">
+          <span class="badgeDot"></span>
+          <span class="badgeText">Spesielt spørsmål</span>
+        </div>
+
+        <h1 id="title">Vil du være Mohamads Valentines?</h1>
+        <p class="sub">
+          Ett klikk, og jeg lover å gjøre dagen ekstra fin.
+        </p>
+
+        <div class="stage" id="stage" aria-label="Valg">
+          <button id="yesBtn" class="btn btnYes" type="button">
+            <span class="btnInner">
+              <span class="heartRing" aria-hidden="true"></span>
+              <span class="btnText">Ja</span>
+            </span>
+          </button>
+
+          <button id="noBtn" class="btn btnNo" type="button">
+            <span class="btnInner">
+              <span class="btnText">Nei</span>
+              <span class="noAura" aria-hidden="true"></span>
+            </span>
+          </button>
+        </div>
+
+        <div class="result" id="result" role="status" aria-live="polite"></div>
+
+        <div class="tiny">
+          Tips: prøv å trykke Nei hvis du klarer.
+        </div>
+      </section>
+
+      <footer class="footer">
+        Laget med kjærlighet av Mohamad
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
